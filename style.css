@@ -1,0 +1,363 @@
+/* Reset some default styles */
+*{
+  font-family: 'Lucida';
+}
+
+/* CSS for the popup element */
+.promo-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.link{
+  border: 1px;
+  border-radius: 5px;
+  border-color: #000;
+  border-style: solid;
+
+  
+}
+.link a{
+  margin-left: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 1%;  
+  color: black;
+}
+
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+
+body, h1, h2, p, ul, li, audio {
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  
+}
+
+.footer-content{
+  display: flex;
+  
+}
+
+.footer-content p{
+  margin-left: 30rem;
+  margin-right: 20rem;
+}
+
+
+.footer-content a{
+  font-size: 15px;
+  text-decoration: none;
+  margin-left: 4rem;
+}
+
+
+.instagram-icon {
+  font-size: 30px; /* Adjust the size of the icon */
+  color: #ffffff; /* Adjust the color of the icon */
+  
+}
+
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+/* Improve the header appearance */
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #333;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+/* Improve the song list appearance */
+.song-list {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #f1f1f1;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.song-list h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-list li {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: #555;
+}
+
+.song-list li:last-child {
+  border-bottom: none;
+}
+
+.song-list li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Music Player Styling */
+.music-player {
+  width: 80%;
+  max-width: 400px; /* Adjust the max-width as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  
+  align-items: center;
+  border-radius: 10px;
+ margin-left: 50%;
+  
+}
+
+.music-player audio {
+  width: 100%;
+  max-width: 400px;
+  margin-right: 10px;
+}
+
+.music-player h2 {
+  font-size: 18px;
+}
+
+/* Plyr.js audio player custom styles */
+.plyr {
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 500px; /* Match the width of the player container */
+}
+
+.plyr__controls {
+  background-color: #000;
+  border-radius: 10px;
+  padding: 10px; /* Increase the padding for better spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plyr__controls button {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px; /* Increase the font size of the buttons */
+  transition: transform 0.2s;
+}
+
+.plyr__controls button:hover {
+  transform: scale(1.1);
+}
+
+.plyr__controls button:focus {
+  outline: none;
+}
+
+.plyr__progress__container {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.plyr__progress__container input[type="range"] {
+  width: 100%;
+  background-color: #555;
+  border-radius: 5px;
+  height: 4px; /* Decrease the height of the progress bar */
+}
+
+.plyr__progress__container input[type="range"]::-webkit-slider-thumb,
+.plyr__progress__container input[type="range"]::-moz-range-thumb,
+.plyr__progress__container input[type="range"]::-ms-thumb {
+  width: 8px; /* Increase the width of the progress bar thumb */
+  height: 8px; /* Increase the height of the progress bar thumb */
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.plyr__time--current,
+.plyr__time--duration {
+  color: #fff;
+  font-size: 14px; /* Increase the font size of the time display */
+}
+
+.plyr__volume {
+  display: flex;
+  align-items: center;
+}
+
+.plyr__volume--display {
+  margin-left: 10px;
+  font-size: 14px; /* Increase the font size of the volume display */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Reduce header font size and padding */
+  header h1 {
+    font-size: 36px;
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    padding: 8px 15px;
+  }
+
+  /* Adjust song list padding and font size */
+  .song-list {
+    padding: 10px;
+  }
+
+  .song-list h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .song-list li {
+    padding: 8px 12px;
+  }
+
+  /* Reduce player width and bottom distance */
+  .music-player {
+    width: 90%;
+    max-width: 400px;
+    
+  }
+
+  .music-player h2 {
+    font-size: 16px;
+  }
+
+  /* Adjust Plyr.js audio player controls for smaller screens */
+  .plyr__controls {
+    padding: 5px;
+  }
+
+  .plyr__controls button {
+    font-size: 20px;
+  }
+
+  .plyr__progress__container input[type="range"] {
+    height: 3px;
+  }
+
+  .plyr__progress__container input[type="range"]::-webkit-slider-thumb,
+  .plyr__progress__container input[type="range"]::-moz-range-thumb,
+  .plyr__progress__container input[type="range"]::-ms-thumb {
+    width: 6px;
+    height: 6px;
+  }
+
+  .plyr__time--current,
+  .plyr__time--duration {
+    font-size: 12px;
+  }
+
+  .plyr__volume--display {
+    font-size: 12px;
+  }
+
+  .footer-content{
+    display: block;
+  }
+  
+  .footer-content p{
+    margin-left:0;
+    margin-right: 0;
+  }
+  
+  
+  .footer-content a{
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 3rem;
+  }
+  
+  .footer{
+    bottom: 0;
+  }
+  
+
+
+}
