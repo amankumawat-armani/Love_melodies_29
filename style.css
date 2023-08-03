@@ -192,7 +192,7 @@ nav a:hover {
 
 /* Music Player Styling */
 .music-player {
-  display: flex;
+  
   width: 80%;
   max-width: 700px; /* Adjust the max-width as needed */
   left: 50%;
