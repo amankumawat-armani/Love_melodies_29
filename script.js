@@ -70,9 +70,6 @@ const songsByArtist = {
 
 
 
-
-
-  
   'Arijit Singh': [
     { title: 'Aabaad Barbaad', src: '/arijit/Aabaad_Barbaad.mp3' },
     { title: 'Baatein ye kabhi na', src: '/arijit/Baatein_Ye_Kabhi_Na.mp3' },
@@ -152,32 +149,34 @@ const songsByArtist = {
     { title: 'Ram_Siya_Ram_2.0', src: '/sachet/Ram_Siya_Ram_2.0.mp3' },
     { title: 'Takdaa_Rawaan', src: '/sachet/Takdaa_Rawaan.mp3' },
   ],
+
   // Add more artists and their songs here
 };
 
 
 // JavaScript to show the popup and check promo code
-document.addEventListener('DOMContentLoaded', function () {
-  const popup = document.getElementById('promoPopup');
+// document.addEventListener('DOMContentLoaded', function () {
+//   const popup = document.getElementById('promoPopup');
 
-  // Show the popup when the page loads
-  popup.style.display = 'block';
-});
+//   // Show the popup when the page loads
+//   popup.style.display = 'block';
+// });
 
-function checkPromoCode() {
-  const promoCodeInput = document.getElementById('promoCodeInput');
-  const promoCode = promoCodeInput.value.trim();
+// function checkPromoCode() {
+//   const promoCodeInput = document.getElementById('promoCodeInput');
+//   const promoCode = promoCodeInput.value.trim();
 
-  // Check if the entered promo code is correct
-  if (promoCode === '2952'|| promoCode === '3011') {
-    const popup = document.getElementById('promoPopup');
-    popup.style.display = 'none'; // Hide the popup
+//   // Check if the entered promo code is correct
+//   if (promoCode === '2952'|| promoCode === '3011') {
+//     const popup = document.getElementById('promoPopup');
+//     popup.style.display = 'none'; // Hide the popup
 
-    // Add your code here to allow the user to continue the website
-  } else {
-    alert('Invalid promo code. Please try again.'); // Display an error message
-  }
-}
+//     // Add your code here to allow the user to continue the website
+//   } else {
+//     alert('Invalid promo code. Please try again.'); // Display an error message
+//   }
+// }
+
 
 
 
