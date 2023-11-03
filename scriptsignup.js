@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const responseDiv = document.getElementById('response');
         console.log(data.message)
         responseDiv.innerHTML = 'API Response: ' + JSON.stringify(data);
+        window.location.href = 'log.html';
     })
     .catch(error => {
         console.error('Error:', error);
