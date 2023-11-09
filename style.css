@@ -61,7 +61,7 @@ main {
 
 .song-list li {
     text-align: center;
-    color: rgba(159,184,204,255);
+    background: rgba(0, 0, 0, 0.368);
     margin: 5px 0;
     padding: 10px;
     color: #ddd;
