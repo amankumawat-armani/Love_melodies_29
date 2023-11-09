@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+*{
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 7%;
+    height: 8%;
     background: #000;
     color: white;
     display: flex;
@@ -26,7 +26,7 @@ header {
 }
 
 .header .logo {
-    color: rgba(159,184,204,255);
+    color:radial-gradient(  rgba(233, 0, 120, 1), rgba(0, 0, 0, 1) );
     margin-left: 3%;
     font-weight: bold;
     font-size: 1.5rem;
@@ -37,19 +37,21 @@ header {
 .header .search-icon {
     
     cursor: pointer;
-    color:rgba(159,184,204,255) ;
+    color:radial-gradient(  rgba(233, 0, 120, 1), rgba(0, 0, 0, 1) );
     margin-right: 3%; /* Adjust the margin as needed */
 }
 
 /* Main content styles */
 main {
-    padding: 20px;
+    background-image: radial-gradient( circle 602px at 2.1% 5.1%, rgba(233, 0, 120, 1) 0%, rgba(0, 0, 0, 1) 90.1%);
+    scroll-behavior: smooth;
+    padding: 0px;
     margin-top: 60px;
     margin-bottom: 60px;
     max-height: calc(100vh - 120px);
     overflow-y: auto;
     background-position: center;
-    background-image: url("main-back3.jpg");
+    background-color: #000;
     
     
 }
@@ -57,17 +59,22 @@ main {
 .song-list {
     list-style: none;
     padding: 0;
+    width: 100%;
+    padding: 3%;
+
 }
 
 .song-list li {
-    text-align: center;
+    /* text-align: center;
     background: rgba(0, 0, 0, 0.368);
     margin: 5px 0;
-    padding: 10px;
-    color: #ddd;
+    height: 80px; */
+    margin-top: 2%;
+    /* padding: 5%; */
+    /* color: #ddd;
     border-radius: 10px;
     cursor: pointer;
-    border: 1px solid;
+    border: 1px solid; */
 }
 
 .song-list li:hover {
@@ -118,7 +125,7 @@ footer {
 .song-title {
     font-weight: bold;
     align-items: center;
-    color: rgba(159, 184, 209, 265);
+    color:radial-gradient(  rgba(233, 0, 120, 1), rgba(0, 0, 0, 1) );
 }
 
 .audio-progress {
@@ -146,13 +153,13 @@ footer {
 
 .time {
     font-size: 0.9rem;
-    color: rgba(159, 184, 209, 265);
+    color:radial-gradient(  rgba(233, 0, 120, 1), rgba(0, 0, 0, 1) );
 }
 
 .audio-buttons {
     display: flex;
     align-items: center;
-    color: rgba(159, 184, 209, 265);
+    color:radial-gradient(  rgba(233, 0, 120, 1), rgba(0, 0, 0, 1) );
 }
 
 .prev-button,
@@ -216,3 +223,45 @@ footer {
 .search-results li:hover {
     background: #9fb8cc97;
 }
+
+
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.card {
+    background-color: #00000050;
+    
+    border-radius: 10px;
+    border-width: 1px;
+    height: 8%;
+    width: 100%;
+    align-content: space-evenly;
+    display: flex;
+    border-radius: 5px;
+}
+.card img {
+    height: 70px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+}
+
+.card .content {
+    color: #ffffff;
+    width: 60%;
+}
+
+
+
